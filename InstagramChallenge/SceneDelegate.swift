@@ -10,12 +10,23 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
-
+    
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+        let dataManager = DataManager()
+        
+//        dataManager.getUserAutoSignIn { UserPostResponse in
+//            if UserPostResponse.isSuccess == true {
+//                let mainViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
+//                self.window?.rootViewController = mainViewController
+//                print("자동로그인 성공!")
+//            } else {
+//                let LoginViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+//                self.window?.rootViewController = LoginViewController
+//            }
+//        }
         guard let _ = (scene as? UIWindowScene) else { return }
     }
 
