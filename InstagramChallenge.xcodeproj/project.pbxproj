@@ -15,6 +15,10 @@
 		2703A73D288E7CF9001FD9EC /* InstagramChallenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2703A73B288E7CF9001FD9EC /* InstagramChallenge.xcdatamodeld */; };
 		2703A73F288E7CFB001FD9EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2703A73E288E7CFB001FD9EC /* Assets.xcassets */; };
 		2703A742288E7CFB001FD9EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2703A740288E7CFB001FD9EC /* LaunchScreen.storyboard */; };
+		2719FA2628957683009CFB68 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2719FA2528957682009CFB68 /* MainTabBarController.swift */; };
+		27705827289546E500F64C7B /* AcceptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27705826289546E500F64C7B /* AcceptViewController.swift */; };
+		27705829289570AA00F64C7B /* CreateNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27705828289570AA00F64C7B /* CreateNameViewController.swift */; };
+		2770582B2895728B00F64C7B /* LastCheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2770582A2895728B00F64C7B /* LastCheckViewController.swift */; };
 		27839B66289172BF00055FBA /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27839B65289172BF00055FBA /* UIColor.swift */; };
 		27839B6828917A8A00055FBA /* LoginViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27839B6728917A8A00055FBA /* LoginViewControllerExtension.swift */; };
 		27839B6A2892BC8900055FBA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27839B692892BC8900055FBA /* MainViewController.swift */; };
@@ -25,6 +29,10 @@
 		27839B9728950F6400055FBA /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27839B9628950F6400055FBA /* EmailViewController.swift */; };
 		27839B9928950F8100055FBA /* PhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27839B9828950F8100055FBA /* PhoneViewController.swift */; };
 		27839B9B2895153500055FBA /* EmailJoinContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27839B9A2895153500055FBA /* EmailJoinContainerViewController.swift */; };
+		27839B9D28952C8A00055FBA /* InputCertificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27839B9C28952C8A00055FBA /* InputCertificationViewController.swift */; };
+		27839B9F2895379E00055FBA /* InputNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27839B9E2895379E00055FBA /* InputNameViewController.swift */; };
+		27839BA12895382300055FBA /* InputPassWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27839BA02895382300055FBA /* InputPassWordViewController.swift */; };
+		27839BA32895394E00055FBA /* InputBirthdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27839BA22895394E00055FBA /* InputBirthdayViewController.swift */; };
 		27E4FA7228912E3000982234 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27E4FA7128912E3000982234 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +47,10 @@
 		2703A73E288E7CFB001FD9EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2703A741288E7CFB001FD9EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2703A743288E7CFB001FD9EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2719FA2528957682009CFB68 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		27705826289546E500F64C7B /* AcceptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceptViewController.swift; sourceTree = "<group>"; };
+		27705828289570AA00F64C7B /* CreateNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNameViewController.swift; sourceTree = "<group>"; };
+		2770582A2895728B00F64C7B /* LastCheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastCheckViewController.swift; sourceTree = "<group>"; };
 		27839B65289172BF00055FBA /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		27839B6728917A8A00055FBA /* LoginViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerExtension.swift; sourceTree = "<group>"; };
 		27839B692892BC8900055FBA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +61,10 @@
 		27839B9628950F6400055FBA /* EmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
 		27839B9828950F8100055FBA /* PhoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneViewController.swift; sourceTree = "<group>"; };
 		27839B9A2895153500055FBA /* EmailJoinContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailJoinContainerViewController.swift; sourceTree = "<group>"; };
+		27839B9C28952C8A00055FBA /* InputCertificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputCertificationViewController.swift; sourceTree = "<group>"; };
+		27839B9E2895379E00055FBA /* InputNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputNameViewController.swift; sourceTree = "<group>"; };
+		27839BA02895382300055FBA /* InputPassWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputPassWordViewController.swift; sourceTree = "<group>"; };
+		27839BA22895394E00055FBA /* InputBirthdayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputBirthdayViewController.swift; sourceTree = "<group>"; };
 		27E4FA7128912E3000982234 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D68367E55FF3A56DE4F0B459 /* Pods-InstagramChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramChallenge.debug.xcconfig"; path = "Target Support Files/Pods-InstagramChallenge/Pods-InstagramChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		F726BA39BE7E1FCF986E74A7 /* Pods-InstagramChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramChallenge.release.xcconfig"; path = "Target Support Files/Pods-InstagramChallenge/Pods-InstagramChallenge.release.xcconfig"; sourceTree = "<group>"; };
@@ -112,6 +128,14 @@
 				27839B9628950F6400055FBA /* EmailViewController.swift */,
 				27839B9828950F8100055FBA /* PhoneViewController.swift */,
 				27839B9A2895153500055FBA /* EmailJoinContainerViewController.swift */,
+				27839B9C28952C8A00055FBA /* InputCertificationViewController.swift */,
+				27839B9E2895379E00055FBA /* InputNameViewController.swift */,
+				27839BA02895382300055FBA /* InputPassWordViewController.swift */,
+				27839BA22895394E00055FBA /* InputBirthdayViewController.swift */,
+				27705826289546E500F64C7B /* AcceptViewController.swift */,
+				27705828289570AA00F64C7B /* CreateNameViewController.swift */,
+				2770582A2895728B00F64C7B /* LastCheckViewController.swift */,
+				2719FA2528957682009CFB68 /* MainTabBarController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -275,17 +299,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27839BA32895394E00055FBA /* InputBirthdayViewController.swift in Sources */,
+				27839B9D28952C8A00055FBA /* InputCertificationViewController.swift in Sources */,
+				2719FA2628957683009CFB68 /* MainTabBarController.swift in Sources */,
+				27705827289546E500F64C7B /* AcceptViewController.swift in Sources */,
 				27839B952894BD2000055FBA /* EmailJoinViewController.swift in Sources */,
 				27839B6A2892BC8900055FBA /* MainViewController.swift in Sources */,
+				27839BA12895382300055FBA /* InputPassWordViewController.swift in Sources */,
 				27839B6C2892C1A800055FBA /* DataManager.swift in Sources */,
 				27839B6828917A8A00055FBA /* LoginViewControllerExtension.swift in Sources */,
 				2703A73D288E7CF9001FD9EC /* InstagramChallenge.xcdatamodeld in Sources */,
+				27705829289570AA00F64C7B /* CreateNameViewController.swift in Sources */,
 				2703A737288E7CF9001FD9EC /* LoginViewController.swift in Sources */,
 				2703A733288E7CF9001FD9EC /* AppDelegate.swift in Sources */,
+				27839B9F2895379E00055FBA /* InputNameViewController.swift in Sources */,
 				27839B9728950F6400055FBA /* EmailViewController.swift in Sources */,
 				2703A735288E7CF9001FD9EC /* SceneDelegate.swift in Sources */,
 				27839B9B2895153500055FBA /* EmailJoinContainerViewController.swift in Sources */,
 				27839B6E2892C35E00055FBA /* Response.swift in Sources */,
+				2770582B2895728B00F64C7B /* LastCheckViewController.swift in Sources */,
 				27839B9928950F8100055FBA /* PhoneViewController.swift in Sources */,
 				27839B702893824D00055FBA /* JoinViewController.swift in Sources */,
 				27839B66289172BF00055FBA /* UIColor.swift in Sources */,

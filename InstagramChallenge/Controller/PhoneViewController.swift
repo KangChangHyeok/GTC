@@ -14,6 +14,9 @@ class PhoneViewController: UIViewController {
     }
 
     @IBAction func nextButtonTapped(_ sender: UIButton) {
+        let inputCertificationViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "InputCertificationViewController") as! InputCertificationViewController
+        inputCertificationViewController.modalPresentationStyle = .fullScreen
+        present(inputCertificationViewController, animated: false)
     }
     @IBAction func kakaoLoginButtonTapped(_ sender: UIButton) {
     }

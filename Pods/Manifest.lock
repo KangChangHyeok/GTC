@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (5.6.2)
+  - DLRadioButton (1.4.12)
   - FirebaseAnalytics (9.3.0):
     - FirebaseAnalytics/AdIdSupport (= 9.3.0)
     - FirebaseCore (~> 9.0)
@@ -91,6 +92,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - DLRadioButton (~> 1.4)
   - FirebaseAnalytics
   - Kingfisher (~> 7.0)
   - Tabman (~> 2.12)
@@ -98,6 +100,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - DLRadioButton
     - FirebaseAnalytics
     - FirebaseCore
     - FirebaseCoreDiagnostics
@@ -114,6 +117,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
+  DLRadioButton: d7c4e225ed0e8013cef7be61455230c7557ad7c1
   FirebaseAnalytics: bf46f5163f44097ce2c789de0b3e6f87f1da834a
   FirebaseCore: c088995ece701a021a48a1348ea0174877de2a6a
   FirebaseCoreDiagnostics: 060eb57cc56dfaf40b1b1b5874a5c17c41ce79f8
@@ -128,6 +132,6 @@ SPEC CHECKSUMS:
   PromisesObjC: ab77feca74fa2823e7af4249b8326368e61014cb
   Tabman: 447a50447ed2869c39ab3b1a779327e43e067c4e
 
-PODFILE CHECKSUM: f89cc0060d3a677783f8a0b5ca4ca68ab72c8fe0
+PODFILE CHECKSUM: 7f8fc2bd6bd27dc996d1037f0966d48f46223d28
 
 COCOAPODS: 1.11.3

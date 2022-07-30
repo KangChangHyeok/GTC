@@ -11,4 +11,5 @@ pod 'Alamofire'
 pod 'Kingfisher', '~> 7.0'
 pod 'FirebaseAnalytics'
 pod 'Tabman', '~> 2.12'
+pod 'DLRadioButton', '~> 1.4'
 end
