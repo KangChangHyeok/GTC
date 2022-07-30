@@ -10,4 +10,5 @@ target 'InstagramChallenge' do
 pod 'Alamofire'
 pod 'Kingfisher', '~> 7.0'
 pod 'FirebaseAnalytics'
+pod 'Tabman', '~> 2.12'
 end

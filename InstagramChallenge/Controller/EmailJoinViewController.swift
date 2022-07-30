@@ -6,12 +6,15 @@
 //
 
 import UIKit
+import Tabman
+import Pageboy
 
-class EmailJoinViewController: UIViewController {
+class EmailJoinViewController: TabmanViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
 
+   
 }

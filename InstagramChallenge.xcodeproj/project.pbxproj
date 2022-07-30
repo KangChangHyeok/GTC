@@ -22,6 +22,9 @@
 		27839B6E2892C35E00055FBA /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27839B6D2892C35E00055FBA /* Response.swift */; };
 		27839B702893824D00055FBA /* JoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27839B6F2893824C00055FBA /* JoinViewController.swift */; };
 		27839B952894BD2000055FBA /* EmailJoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27839B942894BD2000055FBA /* EmailJoinViewController.swift */; };
+		27839B9728950F6400055FBA /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27839B9628950F6400055FBA /* EmailViewController.swift */; };
+		27839B9928950F8100055FBA /* PhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27839B9828950F8100055FBA /* PhoneViewController.swift */; };
+		27839B9B2895153500055FBA /* EmailJoinContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27839B9A2895153500055FBA /* EmailJoinContainerViewController.swift */; };
 		27E4FA7228912E3000982234 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27E4FA7128912E3000982234 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +46,9 @@
 		27839B6D2892C35E00055FBA /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		27839B6F2893824C00055FBA /* JoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinViewController.swift; sourceTree = "<group>"; };
 		27839B942894BD2000055FBA /* EmailJoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailJoinViewController.swift; sourceTree = "<group>"; };
+		27839B9628950F6400055FBA /* EmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
+		27839B9828950F8100055FBA /* PhoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneViewController.swift; sourceTree = "<group>"; };
+		27839B9A2895153500055FBA /* EmailJoinContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailJoinContainerViewController.swift; sourceTree = "<group>"; };
 		27E4FA7128912E3000982234 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D68367E55FF3A56DE4F0B459 /* Pods-InstagramChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramChallenge.debug.xcconfig"; path = "Target Support Files/Pods-InstagramChallenge/Pods-InstagramChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		F726BA39BE7E1FCF986E74A7 /* Pods-InstagramChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramChallenge.release.xcconfig"; path = "Target Support Files/Pods-InstagramChallenge/Pods-InstagramChallenge.release.xcconfig"; sourceTree = "<group>"; };
@@ -103,6 +109,9 @@
 				27839B692892BC8900055FBA /* MainViewController.swift */,
 				27839B6F2893824C00055FBA /* JoinViewController.swift */,
 				27839B942894BD2000055FBA /* EmailJoinViewController.swift */,
+				27839B9628950F6400055FBA /* EmailViewController.swift */,
+				27839B9828950F8100055FBA /* PhoneViewController.swift */,
+				27839B9A2895153500055FBA /* EmailJoinContainerViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -273,8 +282,11 @@
 				2703A73D288E7CF9001FD9EC /* InstagramChallenge.xcdatamodeld in Sources */,
 				2703A737288E7CF9001FD9EC /* LoginViewController.swift in Sources */,
 				2703A733288E7CF9001FD9EC /* AppDelegate.swift in Sources */,
+				27839B9728950F6400055FBA /* EmailViewController.swift in Sources */,
 				2703A735288E7CF9001FD9EC /* SceneDelegate.swift in Sources */,
+				27839B9B2895153500055FBA /* EmailJoinContainerViewController.swift in Sources */,
 				27839B6E2892C35E00055FBA /* Response.swift in Sources */,
+				27839B9928950F8100055FBA /* PhoneViewController.swift in Sources */,
 				27839B702893824D00055FBA /* JoinViewController.swift in Sources */,
 				27839B66289172BF00055FBA /* UIColor.swift in Sources */,
 			);

@@ -84,12 +84,16 @@ PODS:
     - nanopb/encode (= 2.30909.0)
   - nanopb/decode (2.30909.0)
   - nanopb/encode (2.30909.0)
+  - Pageboy (3.6.2)
   - PromisesObjC (2.1.1)
+  - Tabman (2.12.0):
+    - Pageboy (~> 3.6.0)
 
 DEPENDENCIES:
   - Alamofire
   - FirebaseAnalytics
   - Kingfisher (~> 7.0)
+  - Tabman (~> 2.12)
 
 SPEC REPOS:
   trunk:
@@ -104,7 +108,9 @@ SPEC REPOS:
     - GoogleUtilities
     - Kingfisher
     - nanopb
+    - Pageboy
     - PromisesObjC
+    - Tabman
 
 SPEC CHECKSUMS:
   Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
@@ -118,8 +124,10 @@ SPEC CHECKSUMS:
   GoogleUtilities: e0913149f6b0625b553d70dae12b49fc62914fd1
   Kingfisher: cdb1189a9223b1bc028816bd47c8b8101a58831c
   nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
+  Pageboy: cf121b9dd48c63f3f281b2a9ec93d02e0f23879b
   PromisesObjC: ab77feca74fa2823e7af4249b8326368e61014cb
+  Tabman: 447a50447ed2869c39ab3b1a779327e43e067c4e
 
-PODFILE CHECKSUM: 8cf7eec817b5889310161e5964e6057cd21afa77
+PODFILE CHECKSUM: f89cc0060d3a677783f8a0b5ca4ca68ab72c8fe0
 
 COCOAPODS: 1.11.3
