@@ -16,5 +16,8 @@ class EmailJoinViewController: TabmanViewController {
 
     }
 
-   
+    @IBAction func loginButtonTapped(_ sender: UIButton) {
+        self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
+    }
+    
 }

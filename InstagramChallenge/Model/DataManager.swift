@@ -7,6 +7,8 @@
 
 import Foundation
 import Alamofire
+import KakaoSDKAuth
+import KakaoSDKUser
 
 class DataManager {
     let baseUrl = "https://challenge-api.gridge.co.kr"
@@ -55,10 +57,10 @@ class DataManager {
     }
     
     //MARK: - 카카오 로그인
-    func postUserKakaoSignIn(completion: @escaping (UserPostResponse) -> Void) {
-        
+    func postUserKakaoSignIn(accessToken: String, completion: @escaping (UserPostResponse) -> Void) {
+        print(accessToken)
         let parameter : Parameters = [
-            "accessToken": "abcd"
+            "accessToken": "\(accessToken)"
         ]
         AF.request(
             baseUrl + "/app/kakao-sign-in",
@@ -75,4 +77,5 @@ class DataManager {
             }
         }
     }
+    
 }

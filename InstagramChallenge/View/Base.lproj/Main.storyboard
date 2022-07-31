@@ -9,6 +9,30 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Find Pw View Controller-->
+        <scene sceneID="nda-WU-H5W">
+            <objects>
+                <viewController storyboardIdentifier="FindPwViewController" id="oQN-3u-0a2" customClass="FindPwViewController" customModule="InstagramChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AEG-Hv-xYa">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="비밀번호 찾기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b00-fO-q4s">
+                                <rect key="frame" x="138" y="101" width="152" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OU4-F7-X5q"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JkK-RN-sBP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-377" y="-2010"/>
+        </scene>
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -438,10 +462,10 @@
                                                             <constraint firstAttribute="width" constant="1" id="5Dq-zw-asd"/>
                                                         </constraints>
                                                     </view>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9AG-RL-Ze0">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="전화번호" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="9AG-RL-Ze0">
                                                         <rect key="frame" x="101" y="0.0" width="327" height="124.33333333333333"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     </textField>
                                                 </subviews>
                                             </stackView>
@@ -572,10 +596,14 @@
                             <constraint firstAttribute="trailing" secondItem="ijF-lj-6k8" secondAttribute="trailing" id="rRB-J3-ipO"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nextButton" destination="fKp-UG-mDG" id="5xd-4p-KR6"/>
+                        <outlet property="userPhoneNumberTextField" destination="9AG-RL-Ze0" id="eLm-XP-E5R"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VvV-zw-0Ks" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2598" y="-1540"/>
+            <point key="canvasLocation" x="2630" y="-1540"/>
         </scene>
         <!--Email View Controller-->
         <scene sceneID="r0n-bH-cma">
@@ -1494,6 +1522,7 @@
                                         <state key="normal" title="로그인"/>
                                         <connections>
                                             <action selector="joinUserButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ksV-ah-DrZ"/>
+                                            <action selector="loginButtonTapped:" destination="hg0-So-jcO" eventType="touchUpInside" id="Ke5-IN-Lz6"/>
                                             <action selector="loginButtonTapped:" destination="Lqr-bR-I9k" eventType="touchUpInside" id="jNt-f1-qRT"/>
                                         </connections>
                                     </button>

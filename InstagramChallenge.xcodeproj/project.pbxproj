@@ -16,6 +16,7 @@
 		2703A73F288E7CFB001FD9EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2703A73E288E7CFB001FD9EC /* Assets.xcassets */; };
 		2703A742288E7CFB001FD9EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2703A740288E7CFB001FD9EC /* LaunchScreen.storyboard */; };
 		2719FA2628957683009CFB68 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2719FA2528957682009CFB68 /* MainTabBarController.swift */; };
+		2759536D289685DA00E3A519 /* FindPwViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2759536C289685DA00E3A519 /* FindPwViewController.swift */; };
 		27705827289546E500F64C7B /* AcceptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27705826289546E500F64C7B /* AcceptViewController.swift */; };
 		27705829289570AA00F64C7B /* CreateNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27705828289570AA00F64C7B /* CreateNameViewController.swift */; };
 		2770582B2895728B00F64C7B /* LastCheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2770582A2895728B00F64C7B /* LastCheckViewController.swift */; };
@@ -48,6 +49,7 @@
 		2703A741288E7CFB001FD9EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2703A743288E7CFB001FD9EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2719FA2528957682009CFB68 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		2759536C289685DA00E3A519 /* FindPwViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPwViewController.swift; sourceTree = "<group>"; };
 		27705826289546E500F64C7B /* AcceptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceptViewController.swift; sourceTree = "<group>"; };
 		27705828289570AA00F64C7B /* CreateNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNameViewController.swift; sourceTree = "<group>"; };
 		2770582A2895728B00F64C7B /* LastCheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastCheckViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				27705828289570AA00F64C7B /* CreateNameViewController.swift */,
 				2770582A2895728B00F64C7B /* LastCheckViewController.swift */,
 				2719FA2528957682009CFB68 /* MainTabBarController.swift */,
+				2759536C289685DA00E3A519 /* FindPwViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				2703A735288E7CF9001FD9EC /* SceneDelegate.swift in Sources */,
 				27839B9B2895153500055FBA /* EmailJoinContainerViewController.swift in Sources */,
 				27839B6E2892C35E00055FBA /* Response.swift in Sources */,
+				2759536D289685DA00E3A519 /* FindPwViewController.swift in Sources */,
 				2770582B2895728B00F64C7B /* LastCheckViewController.swift in Sources */,
 				27839B9928950F8100055FBA /* PhoneViewController.swift in Sources */,
 				27839B702893824D00055FBA /* JoinViewController.swift in Sources */,
