@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wYz-08-5Xm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -179,14 +179,14 @@
                                     <constraint firstItem="KIP-nH-vVi" firstAttribute="width" secondItem="Dia-nX-zd6" secondAttribute="width" multiplier="0.31" id="nHd-AZ-dy3"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZMZ-Wx-HRI">
-                                <rect key="frame" x="349" y="400" width="42" height="42"/>
-                                <color key="backgroundColor" red="0.1215686275" green="0.1137254902" blue="0.1647058874" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZMZ-Wx-HRI">
+                                <rect key="frame" x="359" y="405" width="32" height="32"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ZMZ-Wx-HRI" secondAttribute="height" multiplier="1:1" id="Kgh-Wl-AWT"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title=""/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="" image="hidePassWord"/>
                                 <connections>
                                     <action selector="passwordShowButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aLn-XS-99m"/>
                                 </connections>
@@ -198,7 +198,7 @@
                             <constraint firstItem="Dia-nX-zd6" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.32" id="018-oU-2zj"/>
                             <constraint firstItem="GLa-aS-OR3" firstAttribute="trailing" secondItem="ZMZ-Wx-HRI" secondAttribute="trailing" constant="22" id="11W-dB-Ztl"/>
                             <constraint firstItem="GLa-aS-OR3" firstAttribute="top" secondItem="HZg-EQ-obe" secondAttribute="bottom" constant="30" id="Aqz-E6-LDp"/>
-                            <constraint firstItem="GLa-aS-OR3" firstAttribute="bottom" secondItem="ZMZ-Wx-HRI" secondAttribute="bottom" constant="150" id="HBA-i3-rAe"/>
+                            <constraint firstItem="GLa-aS-OR3" firstAttribute="bottom" secondItem="ZMZ-Wx-HRI" secondAttribute="bottom" constant="155" id="HBA-i3-rAe"/>
                             <constraint firstItem="Dia-nX-zd6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rdn-ga-PNK"/>
                             <constraint firstItem="HCm-fL-XeJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SHG-Do-aFC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GLa-aS-OR3" secondAttribute="bottom" constant="300" id="UEG-lR-JIp"/>
@@ -211,7 +211,7 @@
                             <constraint firstItem="HZg-EQ-obe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.6" id="grE-Q8-aVY"/>
                             <constraint firstItem="GLa-aS-OR3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="jG2-wH-DnG"/>
                             <constraint firstItem="HZg-EQ-obe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="70" id="lh8-lt-QQo"/>
-                            <constraint firstItem="ZMZ-Wx-HRI" firstAttribute="top" secondItem="GLa-aS-OR3" secondAttribute="top" constant="55" id="mJM-o4-eZl"/>
+                            <constraint firstItem="ZMZ-Wx-HRI" firstAttribute="top" secondItem="GLa-aS-OR3" secondAttribute="top" constant="60" id="mJM-o4-eZl"/>
                             <constraint firstItem="HZg-EQ-obe" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.08" id="nCq-aR-dXI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HCm-fL-XeJ" secondAttribute="bottom" constant="40" id="oqE-IM-6pA"/>
                             <constraint firstItem="8dz-4K-2ZV" firstAttribute="top" secondItem="GLa-aS-OR3" secondAttribute="bottom" constant="30" id="psC-K0-2DS"/>
@@ -1678,6 +1678,7 @@
     <resources>
         <image name="bag" catalog="system" width="128" height="128"/>
         <image name="birthDay" width="434" height="310"/>
+        <image name="hidePassWord" width="146" height="146"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="instagramLogoText" width="642" height="216"/>
         <image name="kakao_login_medium_wide" width="300" height="45"/>
