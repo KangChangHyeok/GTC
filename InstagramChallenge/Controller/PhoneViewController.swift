@@ -9,7 +9,7 @@ import UIKit
 import KakaoSDKAuth
 import KakaoSDKUser
 class PhoneViewController: UIViewController {
-
+    
     let dataManager = DataManager()
     @IBOutlet weak var userPhoneNumberTextField: UITextField!
     @IBOutlet weak var nextButton: UIButton! {
@@ -22,9 +22,12 @@ class PhoneViewController: UIViewController {
         super.viewDidLoad()
         userPhoneNumberTextField.delegate = self
     }
-
+    
     @IBAction func nextButtonTapped(_ sender: UIButton) {
         let inputCertificationViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "InputCertificationViewController") as! InputCertificationViewController
+        if let phoneNumber = self.userPhoneNumberTextField.text {
+            inputCertificationViewController.phoneNumber = phoneNumber
+        }
         inputCertificationViewController.modalPresentationStyle = .fullScreen
         present(inputCertificationViewController, animated: false)
     }
@@ -79,12 +82,12 @@ class PhoneViewController: UIViewController {
 extension PhoneViewController: UITextFieldDelegate {
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-            var userPhoneNumberEmpty = true
-            if range.location == 0  {
-                userPhoneNumberEmpty.toggle()
-            } else {
-                userPhoneNumberEmpty = false
-            }
+        var userPhoneNumberEmpty = true
+        if range.location == 0  {
+            userPhoneNumberEmpty.toggle()
+        } else {
+            userPhoneNumberEmpty = false
+        }
         
         if userPhoneNumberEmpty == false {
             
@@ -107,7 +110,6 @@ extension PhoneViewController: UITextFieldDelegate {
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         guard let buttonEnabled = textField.text?.isEmpty else {return}
-        print(buttonEnabled)
         if buttonEnabled == true {
             nextButton.isEnabled = true
             nextButton.alpha = 0.5

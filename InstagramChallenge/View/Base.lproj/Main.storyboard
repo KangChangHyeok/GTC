@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hg0-So-jcO">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -656,6 +656,9 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="157" height="30"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="전화번호 변경 "/>
+                                                <connections>
+                                                    <action selector="phoneNuberChnageButtonTapped:" destination="Wnf-0T-fZb" eventType="touchUpInside" id="4Gm-N1-qPX"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 또는" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drf-ka-uDQ">
                                                 <rect key="frame" x="157" y="0.0" width="34" height="30"/>
@@ -667,6 +670,9 @@
                                                 <rect key="frame" x="191" y="0.0" width="157" height="30"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title=" SMS 재전송."/>
+                                                <connections>
+                                                    <action selector="ReSendMessageButtonTapped:" destination="Wnf-0T-fZb" eventType="touchUpInside" id="Hdk-Cb-733"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -695,22 +701,17 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kRb-a9-ye5">
-                                <rect key="frame" x="139.66666666666666" y="875.33333333333337" width="148.99999999999997" height="27"/>
+                                <rect key="frame" x="193" y="875.33333333333337" width="42" height="27"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이미 계정이 있으신가요?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fWY-7h-GYM">
-                                        <rect key="frame" x="0.0" y="0.0" width="117" height="27"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xSI-Aq-GuV">
-                                        <rect key="frame" x="117.00000000000003" y="0.0" width="32" height="27"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="42" height="27"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="로그인"/>
+                                        <state key="normal" title="돌아가기"/>
                                         <connections>
                                             <action selector="joinUserButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sh0-Bl-EPQ"/>
                                             <action selector="loginButtonTapped:" destination="Lqr-bR-I9k" eventType="touchUpInside" id="CKr-H1-H3L"/>
+                                            <action selector="returnButtonTapped:" destination="Wnf-0T-fZb" eventType="touchUpInside" id="9n0-sL-yJr"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -738,6 +739,11 @@
                             <constraint firstItem="kRb-a9-ye5" firstAttribute="centerX" secondItem="cZG-7T-ivd" secondAttribute="centerX" id="wxW-28-HdO"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nextButton" destination="MgR-cx-CQC" id="SLW-7f-HRA"/>
+                        <outlet property="phoneNumberLabel" destination="d0f-dh-Y2T" id="EJq-iF-J3V"/>
+                        <outlet property="userCertificationTextField" destination="C1Q-IS-B78" id="NyI-lc-XGV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZYW-Ir-w4j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

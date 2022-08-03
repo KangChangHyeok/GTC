@@ -26,7 +26,7 @@ extension LoginViewController: UITextFieldDelegate {
                 userPwEmpty = false
             }
         }
-        if userIdEmpty == false || userIdEmpty == false {
+        if userIdEmpty == false || userPwEmpty == false {
             self.loginButton.isEnabled = false
             self.loginButton.alpha = 0.5
         } else {
