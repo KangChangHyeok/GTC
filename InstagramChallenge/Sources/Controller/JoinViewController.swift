@@ -1,37 +1,19 @@
 //
-//  PhoneViewController.swift
+//  JoinViewController.swift
 //  InstagramChallenge
 //
-//  Created by 강창혁 on 2022/07/30.
+//  Created by 강창혁 on 2022/07/29.
 //
 
 import UIKit
-import KakaoSDKAuth
 import KakaoSDKUser
-class PhoneViewController: UIViewController {
-    
+import KakaoSDKAuth
+class JoinViewController: UIViewController {
     let dataManager = DataManager()
-    @IBOutlet weak var userPhoneNumberTextField: UITextField!
-    @IBOutlet weak var nextButton: UIButton! {
-        didSet {
-            nextButton.isEnabled = true
-            nextButton.alpha = 0.5
-        }
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        userPhoneNumberTextField.delegate = self
     }
-    
-    @IBAction func nextButtonTapped(_ sender: UIButton) {
-        let inputCertificationViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "InputCertificationViewController") as! InputCertificationViewController
-        if let phoneNumber = self.userPhoneNumberTextField.text {
-            inputCertificationViewController.phoneNumber = phoneNumber
-        }
-        inputCertificationViewController.modalPresentationStyle = .fullScreen
-        present(inputCertificationViewController, animated: false)
-    }
-    @IBAction func kakaoLoginButtonTapped(_ sender: UIButton) {
+    @IBAction func kakaoLoginBUttonTapped(_ sender: UIButton) {
         UserApi.shared.loginWithKakaoAccount {(oauthToken, error) in
             //로그인 실패했을때
             guard let accessToken = oauthToken?.accessToken else {return}
@@ -57,6 +39,7 @@ class PhoneViewController: UIViewController {
                         
                     } else {
                         //카카오 로그인은 정상적으로 성공했으나, 인스타그램 아이디를 생성하지 않았을때.
+                        UserSignUpInfo.shared.loginPattern = .kakao
                         var kakaoUserId = ""
                         UserApi.shared.me { user, error in
                             if let result = user?.kakaoAccount?.email {
@@ -77,46 +60,15 @@ class PhoneViewController: UIViewController {
             }
         }
     }
-}
-
-extension PhoneViewController: UITextFieldDelegate {
     
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        var userPhoneNumberEmpty = true
-        if range.location == 0  {
-            userPhoneNumberEmpty.toggle()
-        } else {
-            userPhoneNumberEmpty = false
-        }
-        
-        if userPhoneNumberEmpty == false {
-            
-            self.nextButton.isEnabled = true
-            nextButton.alpha = 1
-        } else {
-            self.nextButton.isEnabled = false
-            self.nextButton.alpha = 0.5
-        }
-        guard let currentText = textField.text else {return false}
-        guard let stringRange = Range(range, in: currentText) else { return false }
-        let updatedText = currentText.replacingCharacters(in: stringRange, with: string)
-        return updatedText.count <= 11
+    @IBAction func userJoinButtonTapped(_ sender: UIButton) {
+        UserSignUpInfo.shared.loginPattern = .normal
+        let emailJoinViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "EmailJoinViewController") as! EmailJoinViewController
+        emailJoinViewController.modalPresentationStyle = .fullScreen
+        present(emailJoinViewController, animated: false)
     }
-    
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        textField.becomeFirstResponder()
-        
-    }
-    
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        guard let buttonEnabled = textField.text?.isEmpty else {return}
-        if buttonEnabled == true {
-            nextButton.isEnabled = true
-            nextButton.alpha = 0.5
-        }
-    }
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        userPhoneNumberTextField.resignFirstResponder()
+    @IBAction func loginButtonTapped(_ sender: UIButton) {
+        self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
         
     }
 }

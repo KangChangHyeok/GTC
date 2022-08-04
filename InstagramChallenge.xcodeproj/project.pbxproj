@@ -16,6 +16,7 @@
 		2703A73F288E7CFB001FD9EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2703A73E288E7CFB001FD9EC /* Assets.xcassets */; };
 		2703A742288E7CFB001FD9EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2703A740288E7CFB001FD9EC /* LaunchScreen.storyboard */; };
 		2719FA2628957683009CFB68 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2719FA2528957682009CFB68 /* MainTabBarController.swift */; };
+		273DCDAB289B5E4D0031CD2D /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273DCDAA289B5E4D0031CD2D /* UserInfo.swift */; };
 		2759536D289685DA00E3A519 /* FindPwViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2759536C289685DA00E3A519 /* FindPwViewController.swift */; };
 		27705827289546E500F64C7B /* AcceptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27705826289546E500F64C7B /* AcceptViewController.swift */; };
 		27705829289570AA00F64C7B /* CreateNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27705828289570AA00F64C7B /* CreateNameViewController.swift */; };
@@ -49,6 +50,7 @@
 		2703A741288E7CFB001FD9EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2703A743288E7CFB001FD9EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2719FA2528957682009CFB68 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		273DCDAA289B5E4D0031CD2D /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		2759536C289685DA00E3A519 /* FindPwViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPwViewController.swift; sourceTree = "<group>"; };
 		27705826289546E500F64C7B /* AcceptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceptViewController.swift; sourceTree = "<group>"; };
 		27705828289570AA00F64C7B /* CreateNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNameViewController.swift; sourceTree = "<group>"; };
@@ -105,13 +107,8 @@
 		2703A731288E7CF9001FD9EC /* InstagramChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				2703A732288E7CF9001FD9EC /* AppDelegate.swift */,
-				2703A734288E7CF9001FD9EC /* SceneDelegate.swift */,
-				2703A74B288E7E2C001FD9EC /* Model */,
-				2703A74A288E7E2A001FD9EC /* View */,
-				2703A749288E7E27001FD9EC /* Controller */,
-				27839B64289172A600055FBA /* Extension */,
-				2703A73E288E7CFB001FD9EC /* Assets.xcassets */,
+				273DCDA7289B5D8F0031CD2D /* Resources */,
+				273DCDA8289B5DA30031CD2D /* Sources */,
 				2703A743288E7CFB001FD9EC /* Info.plist */,
 				27E4FA7128912E3000982234 /* GoogleService-Info.plist */,
 				2703A73B288E7CF9001FD9EC /* InstagramChallenge.xcdatamodeld */,
@@ -159,6 +156,36 @@
 				27839B6D2892C35E00055FBA /* Response.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		273DCDA7289B5D8F0031CD2D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2703A73E288E7CFB001FD9EC /* Assets.xcassets */,
+				27839B64289172A600055FBA /* Extension */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		273DCDA8289B5DA30031CD2D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				273DCDA9289B5E3C0031CD2D /* classes */,
+				2703A732288E7CF9001FD9EC /* AppDelegate.swift */,
+				2703A734288E7CF9001FD9EC /* SceneDelegate.swift */,
+				2703A74B288E7E2C001FD9EC /* Model */,
+				2703A74A288E7E2A001FD9EC /* View */,
+				2703A749288E7E27001FD9EC /* Controller */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		273DCDA9289B5E3C0031CD2D /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				273DCDAA289B5E4D0031CD2D /* UserInfo.swift */,
+			);
+			path = classes;
 			sourceTree = "<group>";
 		};
 		27839B64289172A600055FBA /* Extension */ = {
@@ -315,6 +342,7 @@
 				27705829289570AA00F64C7B /* CreateNameViewController.swift in Sources */,
 				2703A737288E7CF9001FD9EC /* LoginViewController.swift in Sources */,
 				2703A733288E7CF9001FD9EC /* AppDelegate.swift in Sources */,
+				273DCDAB289B5E4D0031CD2D /* UserInfo.swift in Sources */,
 				27839B9F2895379E00055FBA /* InputNameViewController.swift in Sources */,
 				27839B9728950F6400055FBA /* EmailViewController.swift in Sources */,
 				2703A735288E7CF9001FD9EC /* SceneDelegate.swift in Sources */,

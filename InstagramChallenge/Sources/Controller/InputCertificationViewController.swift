@@ -13,7 +13,7 @@ class InputCertificationViewController: UIViewController {
     @IBOutlet weak var phoneNumberLabel: UILabel!
     @IBOutlet weak var nextButton: UIButton! {
         didSet {
-            nextButton.isEnabled = true
+            nextButton.isEnabled = false
             nextButton.alpha = 0.5
         }
     }
@@ -40,6 +40,8 @@ class InputCertificationViewController: UIViewController {
     @IBAction func nextButtonTapped(_ sender: UIButton) {
         let inputNameViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "InputNameViewController") as! InputNameViewController
         inputNameViewController.modalPresentationStyle = .fullScreen
+        //userSignUpInfo에 전화번호 추가 (인증 성공시)
+        UserSignUpInfo.shared.userPhoneNumber = phoneNumber
         present(inputNameViewController, animated: false)
     }
     @IBAction func returnButtonTapped(_ sender: UIButton) {
@@ -51,13 +53,13 @@ extension InputCertificationViewController: UITextFieldDelegate {
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         if range.location == 5 && range.length == 0 {
-            nextButton.isEnabled = false
+            nextButton.isEnabled = true
             nextButton.alpha = 1
         } else if range.location == 6 && range.length == 0 {
-            nextButton.isEnabled = false
+            nextButton.isEnabled = true
             nextButton.alpha = 1
         } else {
-            nextButton.isEnabled = true
+            nextButton.isEnabled = false
             nextButton.alpha = 0.5
         }
         guard let currentText = textField.text else {return false}

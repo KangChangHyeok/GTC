@@ -19,4 +19,7 @@ class CreateNameViewController: UIViewController {
         lastCheckViewController.modalPresentationStyle = .fullScreen
         present(lastCheckViewController, animated: false)
     }
+    @IBAction func loginButtonTapped(_ sender: UIButton) {
+        self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
+    }
 }

@@ -10,10 +10,8 @@ import Tabman
 import Pageboy
 
 class EmailJoinViewController: TabmanViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
 
     @IBAction func loginButtonTapped(_ sender: UIButton) {

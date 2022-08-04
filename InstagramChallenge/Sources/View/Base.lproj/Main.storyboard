@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hg0-So-jcO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xoQ-uf-V3X">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -814,6 +814,7 @@
                                         <state key="normal" title="로그인"/>
                                         <connections>
                                             <action selector="joinUserButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kpb-3i-KsO"/>
+                                            <action selector="loginButtonTapped:" destination="QuN-Ad-x6b" eventType="touchUpInside" id="8pQ-H9-I38"/>
                                             <action selector="loginButtonTapped:" destination="Lqr-bR-I9k" eventType="touchUpInside" id="skY-ZH-jwk"/>
                                         </connections>
                                     </button>
@@ -841,6 +842,10 @@
                             <constraint firstItem="tpn-zI-PAt" firstAttribute="height" secondItem="l55-ZE-sIF" secondAttribute="height" multiplier="0.06" id="wfe-gv-OvA"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nextButton" destination="Plj-Sq-Erb" id="uju-A2-qO6"/>
+                        <outlet property="userNameTextField" destination="tpn-zI-PAt" id="aVp-0O-7xh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j8d-m1-X7b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -866,7 +871,7 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sbv-Wz-ve9">
                                         <rect key="frame" x="0.0" y="83.666666666666657" width="348" height="55.666666666666657"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DOz-Oh-uui">
                                         <rect key="frame" x="0.0" y="189.33333333333331" width="348" height="55.333333333333343"/>
@@ -901,6 +906,7 @@
                                         <state key="normal" title="로그인"/>
                                         <connections>
                                             <action selector="joinUserButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cWa-4l-K8z"/>
+                                            <action selector="loginButtonTapped:" destination="xoQ-uf-V3X" eventType="touchUpInside" id="jn7-GI-i5G"/>
                                             <action selector="loginButtonTapped:" destination="Lqr-bR-I9k" eventType="touchUpInside" id="mgT-PO-obf"/>
                                         </connections>
                                     </button>
@@ -928,6 +934,10 @@
                             <constraint firstItem="fL5-Tj-zov" firstAttribute="trailing" secondItem="S3G-1g-l2i" secondAttribute="trailing" constant="40" id="vXk-gD-NzJ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nextButton" destination="DOz-Oh-uui" id="jgE-EP-Za3"/>
+                        <outlet property="userPassWordTextField" destination="Sbv-Wz-ve9" id="LiG-tL-bQj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2fm-qy-rgq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1383,6 +1393,7 @@
                                         <connections>
                                             <action selector="joinUserButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yaj-S7-5Px"/>
                                             <action selector="loginButtonTapped:" destination="Lqr-bR-I9k" eventType="touchUpInside" id="mRU-aU-O9U"/>
+                                            <action selector="loginButtonTapped:" destination="8WG-ZD-yAE" eventType="touchUpInside" id="vJ9-rc-mP9"/>
                                         </connections>
                                     </button>
                                 </subviews>
