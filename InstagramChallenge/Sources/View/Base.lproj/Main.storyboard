@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="law-My-2gS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0NT-FD-JYC">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -1198,7 +1198,7 @@
                                                     <constraint firstItem="Img-HC-O12" firstAttribute="width" secondItem="kU5-Re-cTB" secondAttribute="width" multiplier="0.1" id="uaf-2U-MuX"/>
                                                 </constraints>
                                             </stackView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="더 알아보기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MTB-BY-Uie">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="더 알아보기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BG9-Su-v63">
                                                 <rect key="frame" x="0.0" y="34.333333333333371" width="388" height="17.666666666666671"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                 <nil key="textColor"/>
@@ -1336,12 +1336,16 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="ServiceTermsButton" destination="Img-HC-O12" id="Zdu-a3-eKj"/>
                         <outlet property="allArgeeButton" destination="iuW-Sz-Jm8" id="GNd-xb-S2O"/>
+                        <outlet property="dataPolicyButton" destination="5fL-Nk-Bgi" id="HBG-49-1It"/>
+                        <outlet property="locationBasedButton" destination="Hdv-ag-RKP" id="gKm-uR-iTG"/>
+                        <outlet property="nextButton" destination="TCm-4p-sFD" id="RCi-8Y-pEU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tpe-J0-t4W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6935" y="-1540"/>
+            <point key="canvasLocation" x="6933.6448598130837" y="-1540.172786177106"/>
         </scene>
         <!--Create Name View Controller-->
         <scene sceneID="tr0-SV-Z8d">
