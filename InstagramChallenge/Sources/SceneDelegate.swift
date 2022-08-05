@@ -25,17 +25,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         let dataManager = DataManager()
-        
-//        dataManager.getUserAutoSignIn { UserPostResponse in
-//            if UserPostResponse.isSuccess == true {
-//                let mainViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
-//                self.window?.rootViewController = mainViewController
-//                print("자동로그인 성공!")
-//            } else {
-//                let LoginViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
-//                self.window?.rootViewController = LoginViewController
-//            }
-//        }
+        guard let jwt = UserDefaults.standard.string(forKey: "jwt") else {return}
+        dataManager.getUserAutoSignIn { UserPostResponse in
+            if UserPostResponse.isSuccess == true {
+                let mainViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainTabBarController") as! MainTabBarController
+                self.window?.rootViewController = mainViewController
+                print("자동로그인 성공!")
+            } else {
+                let LoginViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+                self.window?.rootViewController = LoginViewController
+            }
+        }
         guard let _ = (scene as? UIWindowScene) else { return }
     }
 

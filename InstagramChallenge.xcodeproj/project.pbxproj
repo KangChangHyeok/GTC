@@ -35,6 +35,8 @@
 		27839B9F2895379E00055FBA /* InputNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27839B9E2895379E00055FBA /* InputNameViewController.swift */; };
 		27839BA12895382300055FBA /* InputPassWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27839BA02895382300055FBA /* InputPassWordViewController.swift */; };
 		27839BA32895394E00055FBA /* InputBirthdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27839BA22895394E00055FBA /* InputBirthdayViewController.swift */; };
+		27C185C5289D511E005DE4B8 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C185C3289D511E005DE4B8 /* MainTableViewCell.swift */; };
+		27C185C6289D511E005DE4B8 /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27C185C4289D511E005DE4B8 /* MainTableViewCell.xib */; };
 		27E4FA7228912E3000982234 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27E4FA7128912E3000982234 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +71,8 @@
 		27839B9E2895379E00055FBA /* InputNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputNameViewController.swift; sourceTree = "<group>"; };
 		27839BA02895382300055FBA /* InputPassWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputPassWordViewController.swift; sourceTree = "<group>"; };
 		27839BA22895394E00055FBA /* InputBirthdayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputBirthdayViewController.swift; sourceTree = "<group>"; };
+		27C185C3289D511E005DE4B8 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		27C185C4289D511E005DE4B8 /* MainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
 		27E4FA7128912E3000982234 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D68367E55FF3A56DE4F0B459 /* Pods-InstagramChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramChallenge.debug.xcconfig"; path = "Target Support Files/Pods-InstagramChallenge/Pods-InstagramChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		F726BA39BE7E1FCF986E74A7 /* Pods-InstagramChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramChallenge.release.xcconfig"; path = "Target Support Files/Pods-InstagramChallenge/Pods-InstagramChallenge.release.xcconfig"; sourceTree = "<group>"; };
@@ -170,6 +174,7 @@
 		273DCDA8289B5DA30031CD2D /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				27C185C2289D510B005DE4B8 /* Cells */,
 				273DCDA9289B5E3C0031CD2D /* classes */,
 				2703A732288E7CF9001FD9EC /* AppDelegate.swift */,
 				2703A734288E7CF9001FD9EC /* SceneDelegate.swift */,
@@ -194,6 +199,15 @@
 				27839B65289172BF00055FBA /* UIColor.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		27C185C2289D510B005DE4B8 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				27C185C3289D511E005DE4B8 /* MainTableViewCell.swift */,
+				27C185C4289D511E005DE4B8 /* MainTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		5838297DC887F8A42FCA1F23 /* Pods */ = {
@@ -277,6 +291,7 @@
 				27E4FA7228912E3000982234 /* GoogleService-Info.plist in Resources */,
 				2703A73F288E7CFB001FD9EC /* Assets.xcassets in Resources */,
 				2703A73A288E7CF9001FD9EC /* Main.storyboard in Resources */,
+				27C185C6289D511E005DE4B8 /* MainTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +353,7 @@
 				27839BA12895382300055FBA /* InputPassWordViewController.swift in Sources */,
 				27839B6C2892C1A800055FBA /* DataManager.swift in Sources */,
 				27839B6828917A8A00055FBA /* LoginViewControllerExtension.swift in Sources */,
+				27C185C5289D511E005DE4B8 /* MainTableViewCell.swift in Sources */,
 				2703A73D288E7CF9001FD9EC /* InstagramChallenge.xcdatamodeld in Sources */,
 				27705829289570AA00F64C7B /* CreateNameViewController.swift in Sources */,
 				2703A737288E7CF9001FD9EC /* LoginViewController.swift in Sources */,

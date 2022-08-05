@@ -84,7 +84,7 @@ class LoginViewController: UIViewController {
                 //네트워크 성공시 userdefault에 jwt 키값으로 jwt 토큰 값 저장
                 if UserPostResponse.isSuccess == true {
                     UserDefaults.standard.setValue(UserPostResponse.result?.jwt, forKey: "jwt")
-                    let mainViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
+                    let mainViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainTabBarController") as! MainTabBarController
                     //메인화면으로 이동
                     self.view.window?.rootViewController = mainViewController
                 } else {
@@ -135,7 +135,7 @@ class LoginViewController: UIViewController {
                         //성공시
                         
                         UserDefaults.standard.setValue(UserPostResponse.result?.jwt, forKey: "jwt")
-                        let mainViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
+                        let mainViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainTabBarController") as! MainTabBarController
                         self.view.window?.rootViewController = mainViewController
                         
                         

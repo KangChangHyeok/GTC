@@ -14,4 +14,6 @@ pod 'Tabman', '~> 2.12'
 pod 'DLRadioButton', '~> 1.4'
 pod 'KakaoSDKAuth'  # 사용자 인증
 pod 'KakaoSDKUser'  # 카카오 로그인, 사용자 관리
+pod 'FSPagerView'
+pod 'SnapKit', '~> 5.6.0'
 end

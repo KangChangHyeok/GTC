@@ -33,7 +33,7 @@ class JoinViewController: UIViewController {
                         //성공시
                         
                         UserDefaults.standard.setValue(UserPostResponse.result?.jwt, forKey: "jwt")
-                        let mainViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
+                        let mainViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainTabBarController") as! MainTabBarController
                         self.view.window?.rootViewController = mainViewController
                         
                         
