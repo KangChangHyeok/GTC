@@ -15,6 +15,7 @@ class UserSignUpInfo {
     var userBirthday: String = ""
     var userNickName: String = ""
     var loginPattern: pattern = .normal
+    var accessToken: String = ""
     private init() {}
 }
 

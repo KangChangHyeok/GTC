@@ -74,6 +74,7 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func LoginButtonTapped(_ sender: UIButton) {
+        UserSignUpInfo.shared.loginPattern = .normal
         guard let userIdText = userIdtextField.text else {return}
         guard let userIdPasswordText = userPwTextField.text else {return}
         //아이디와 비밀번호 유효성 검사
@@ -83,7 +84,6 @@ class LoginViewController: UIViewController {
                 //네트워크 성공시 userdefault에 jwt 키값으로 jwt 토큰 값 저장
                 if UserPostResponse.isSuccess == true {
                     UserDefaults.standard.setValue(UserPostResponse.result?.jwt, forKey: "jwt")
-                    print(UserDefaults.standard.string(forKey: "jwt")!)
                     let mainViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
                     //메인화면으로 이동
                     self.view.window?.rootViewController = mainViewController
@@ -116,6 +116,7 @@ class LoginViewController: UIViewController {
         
     }
     @IBAction func KakaoLoginButtonTapped(_ sender: UIButton) {
+        UserSignUpInfo.shared.loginPattern = .kakao
         UserApi.shared.loginWithKakaoAccount {(oauthToken, error) in
             //로그인 실패했을때
             guard let accessToken = oauthToken?.accessToken else {return}
@@ -141,6 +142,7 @@ class LoginViewController: UIViewController {
                         
                     } else {
                         //카카오 로그인은 정상적으로 성공했으나, 인스타그램 아이디를 생성하지 않았을때.
+                        UserSignUpInfo.shared.accessToken = accessToken
                         var kakaoUserId = ""
                         UserApi.shared.me { user, error in
                             if let result = user?.kakaoAccount?.email {

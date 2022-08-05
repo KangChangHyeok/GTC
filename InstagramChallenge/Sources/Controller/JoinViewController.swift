@@ -17,6 +17,7 @@ class JoinViewController: UIViewController {
         UserApi.shared.loginWithKakaoAccount {(oauthToken, error) in
             //로그인 실패했을때
             guard let accessToken = oauthToken?.accessToken else {return}
+            print(accessToken)
             if let error = error {
                 print("로그인 실패", error)
                 let kakaoLoginFailAlert = UIAlertController(title: "로그인에 실패하였습니다.", message: nil, preferredStyle: .alert)
