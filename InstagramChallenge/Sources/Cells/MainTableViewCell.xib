@@ -191,6 +191,14 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="likesCountLabel" destination="C0q-ef-CSL" id="GDy-Az-lA2"/>
+                <outlet property="userIdLabel" destination="Nhb-GB-Emg" id="gXW-vL-wYp"/>
+                <outlet property="userProfileImage" destination="SnV-UO-U4F" id="tMh-1e-94R"/>
+                <outlet property="userSlideImage" destination="pjV-39-hAs" id="VcU-oW-v8b"/>
+                <outlet property="userSlideImageCount" destination="T8A-AR-ysO" id="6kZ-8a-1WY"/>
+                <outlet property="viewMoreButton" destination="Wg6-uF-GME" id="adI-Fz-N3f"/>
+            </connections>
             <point key="canvasLocation" x="523.91304347826087" y="400.78125"/>
         </tableViewCell>
     </objects>
