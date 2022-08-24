@@ -1,5 +1,5 @@
 # 그릿지 테스트 챌린지(instagram Clone Project)
-> 시연영상 구글드라이브 링크 https://drive.google.com/file/d/1KC58wWk9wDrRniHWIbiJulD3ryfI9FEH/view?usp=sharing
+> 시연영상 구글드라이브 링크 https://drive.google.com/file/d/1ZH75TFQMKOiOsa8TCm43i2aTPpiJgyIN/view?usp=sharing
 
 ## 프로젝트 소개
 - instagram Clone Project입니다.
